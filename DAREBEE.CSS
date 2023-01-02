@@ -1,8 +1,34 @@
 /*main 홈페이지 grid*/
+
+*::before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing: border-box; }
+
+html{-webkit-font-smoothing:subpixel-antialiased;display: block!important;font-size: 62.5%;}
+
+body{background: #e5e5e5;color: #333333;line-height: 1.6; font-size: 1.4rem;padding:0;margin:0;font-family: Arial, Helvetica, sans-serif; }
+
+.homepage{display: none;}
+
+.itemid-101 .homepage{display: grid; padding: 7px 0 0 0;}
+
+.itemid-101 .main, .itemid-101 .aftermain, .itemid-101 .top {display:none !important}
+
+.homepage{display: none;}
+
+.itemid-101 .homepage{display: grid; padding: 7px 0 0 0;}
+
+.itemid-101 .main, .itemid-101 .aftermain, .itemid-101 .top {display:none !important}
+
 .itemid-101 .homepage{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 1px;
     height: 100%;
 }
+@media(max-width:767px) {
+    .homepage, #exercise, #wod, #challenge{display: block!important; width: 100!important;} 
+    #exercise, #wod, #challenge{margin-bottom:10px ;}
+    .bottom{margin-top:0!important; }
+    
+}
+
