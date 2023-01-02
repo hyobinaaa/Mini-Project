@@ -1,0 +1,8 @@
+/*main 홈페이지 grid*/
+.itemid-101 .homepage{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    height: 100%;
+}
