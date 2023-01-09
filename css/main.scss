@@ -196,21 +196,21 @@ img {
   }
 }
 
+.main {
+  width: 100%;
+  padding: 25px;
+  background-color: #fff;
+}
+
 // daily 페이지
 .daily {
-
-  .main {
-    width: 100%;
-    padding: 25px;
-    background-color: #fff;
 
     figure.item_image {
       background-image: url(https://darebee.com/templates/darebee/images/dailydare.jpg);
       background-repeat: no-repeat;
       text-align: center;
       display: block;
-    }
-
+    } 
     
-    }
 }
+
