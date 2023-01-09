@@ -12,6 +12,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.3.js"
+  integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+  crossorigin="anonymous">
+  </script>
+  
+  <script defer src="/js/main.js"></script>
 </head>
 
 <body class="daily">
@@ -42,7 +50,7 @@
 
         <div class="bookmarks">
           <a href="javascript:void(0)">
-            <img src="https://darebee.com/images/bookmark.png" alt="bookmarks">
+            <img src="/images/bookmark.png" alt="bookmarks">
           </a>
         </div>
       </div>
@@ -51,12 +59,28 @@
     <div class="wrapper">
       <div class="main">
           <figure class="item_image">
-            <img src="https://darebee.com/images/exercise/2023/january4.gif" alt="daily">
+            <img src="/images/january8.gif" alt="daily">
           </figure>
 
           <div class="timerbody">
             <div class="timerbox">
-              <a href="javascript:void(0)">+ TIMER</a>
+              <a href="javascript:void(0)" class="showtimer">+ TIMER</a>
+
+              <div class="timeShow" style="display: none;">
+                <div class="stopwatch">
+
+                  <div class="timecounter">
+                    <h1 id="time">
+                      00:00
+                    </h1>
+                  </div>
+                  <div class="sec1">
+                    <div id="button1">30 sec</div>
+                  </div>
+  
+                </div>
+              </div>
+
             </div>
           </div>
       </div>
