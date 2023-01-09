@@ -1,3 +1,4 @@
+// 공통 부분
 body {
   background: #e5e5e5;
   color: #333333;
@@ -25,6 +26,7 @@ img {
   border: 0;
 }
 
+// 메인 홈페이지 위에 메뉴
 .header {
   height: 70px;
   margin-bottom: 5px;
@@ -100,42 +102,108 @@ img {
 
     }
     
-    
-
   }
 
 }
 
-.mainhompage{
-  .homepage {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 10px;
-    
-    #exercise {
-      grid-row: 1 / 3;
+// 메인 홈페이지 중앙 메뉴
+.homepage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+  
+  #exercise {
+    grid-row: 1 / 3;
+  }
+}
+
+// 메인 홈페이지 하단 메뉴
+.footer {
+  text-align: center;
+  margin-top: 70px;
+  font-weight: bold;
+  color: #141414;
+  font-family: cursive;
+  font-size: 32px;
+}
+
+// 타이머
+.timerbody {
+  min-height: 30px;
+  display: block;
+  margin: 0;
+  padding: 10px;
+  border-top: 1px solid #b2b2b2;
+  font-family: 'Roboto Slab', serif;
+
+  .timerbox {
+    text-align: center;
+    margin: 0 auto;
+    width: 420px;
+
+    a {
+      color: #666;
+      font-weight: bold;
+      font-size: 12px;
+      display: inline-block;
+    }
+
+    .timeShow {
+
+      .stopwatch {
+        display: block;
+        width: 480px;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+        min-height: 55px;
+        position: relative;
+
+        .timecounter {
+          position: absolute;
+          left: 100px;
+          h1#time {
+            display: block;
+            width: 100%;
+            color: #fff;
+            background: #999;
+            font-size: 32px;
+            padding: 0 10px;
+            line-height: 40px;
+            font-family: 'Pathway Gothic One', sans-serif;
+            text-align: center;
+            font-weight: normal;
+            } 
+          }
+
+        .sec1 {
+          position: absolute;
+          left: 220px;
+          #button1 {
+            display: inline-block;
+            width: 80px;
+            height: 40px;
+            border: 1px solid #CCC;
+            box-sizing: border-box;
+            margin: 0 0 0 5px;
+            cursor: pointer;
+            font-size: 20px;
+           }
+          }           
+        }  
     }
   }
-} 
-
-
-.mainhompage {
-  .footer {
-    text-align: center;
-    margin-top: 70px;
-    font-weight: bold;
-    color: #141414;
-    font-family: cursive;
-    font-size: 32px;
-  }
 }
 
+// daily 페이지
 .daily {
+
   .main {
     width: 100%;
     padding: 25px;
     background-color: #fff;
+
     figure.item_image {
       background-image: url(https://darebee.com/templates/darebee/images/dailydare.jpg);
       background-repeat: no-repeat;
@@ -143,24 +211,6 @@ img {
       display: block;
     }
 
-    .timerbody {
-      height: 30px;
-      display: block;
-      margin: 0;
-      padding: 10px;
-      border-top: 1px solid #b2b2b2;
-      font-family: 'Roboto Slab', serif;
-      .timerbox {
-        text-align: center;
-        margin: 0 auto;
-        width: 420px;
-        a {
-          color: #666;
-          font-weight: bold;
-          font-size: 12px;
-          display: inline-block;
-        }
-      }
+    
     }
-  }
 }
