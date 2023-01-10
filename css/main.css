@@ -64,6 +64,17 @@ img {
   cursor: pointer;
   font-size: 20px;
 }
+.timeShow .stopwatch .sec1 #buttonstart {
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  border: 1px solid #CCC;
+  box-sizing: border-box;
+  margin: 0 0 0 5px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: red;
+}
 
 .main {
   width: 100%;
@@ -267,13 +278,32 @@ img {
   width: 24%;
 }
 
-.got-abs figure.item_image {
+.workout1 figure.item_image {
   background-image: url(/images/darebg.jpg);
   text-align: center;
 }
-.got-abs .timecounter {
+.workout1 .timecounter {
   margin-left: 40px;
 }
-.got-abs .sec1 {
+.workout1 .sec1 {
+  margin-left: 30px;
+}
+
+.workout2 figure.item_image {
+  background-image: url(/images/darebg.jpg);
+  text-align: center;
+}
+.workout2 #tools-box {
+  display: block;
+  text-align: center;
+  padding: 5px 0;
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.workout2 .timecounter {
+  margin-left: 40px;
+}
+.workout2 .sec1 {
   margin-left: 30px;
 }/*# sourceMappingURL=main.css.map */
