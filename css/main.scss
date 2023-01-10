@@ -30,7 +30,8 @@ img {
 .header {
   height: 70px;
   margin-bottom: 5px;
-
+  
+  // 로고
   .logo {
     display: block;
     height: 55px;
@@ -38,6 +39,7 @@ img {
     padding: 14px 5px 0 0;
   }
 
+  // 북마크
   .bookmarks {
     display: inline-block;
     position: absolute;
@@ -45,9 +47,10 @@ img {
     top: 0;
   }
 
+  // 상단
   .topmenu  {
     display: block;
-
+    
     ul {
       display: block;
       font-family: 'Pathway Gothic One', sans-serif;
@@ -196,21 +199,39 @@ img {
   }
 }
 
+.main {
+  width: 100%;
+  padding: 25px;
+  background-color: #fff;
+}
+
 // daily 페이지
 .daily {
 
-  .main {
-    width: 100%;
-    padding: 25px;
-    background-color: #fff;
+  figure.item_image {
+    background-image: url(https://darebee.com/templates/darebee/images/dailydare.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+    display: block;
+  }
 
-    figure.item_image {
-      background-image: url(https://darebee.com/templates/darebee/images/dailydare.jpg);
-      background-repeat: no-repeat;
-      text-align: center;
-      display: block;
-    }
-
-    
-    }
 }
+
+.workouts_main {
+
+  .item_category {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    .item {
+      padding-right: 0.5%;
+      padding-top: 0.5%;
+      width: 24%;
+      .item-image {
+      }
+    }
+
+  }
+}
+
