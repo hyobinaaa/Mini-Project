@@ -176,14 +176,27 @@ img {
   font-size: 20px;
 }
 
-.daily .main {
+.main {
   width: 100%;
   padding: 25px;
   background-color: #fff;
 }
-.daily .main figure.item_image {
+
+.daily figure.item_image {
   background-image: url(https://darebee.com/templates/darebee/images/dailydare.jpg);
   background-repeat: no-repeat;
   text-align: center;
   display: block;
+}
+
+.workouts_main .item_category {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.workouts_main .item_category .item {
+  padding-right: 0.5%;
+  padding-top: 0.5%;
+  width: 24%;
 }/*# sourceMappingURL=main.css.map */
